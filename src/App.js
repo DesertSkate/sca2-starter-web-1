@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components'
 import theme from './theme'
 import client from './client'
 import Home from './containers/Home/'
+import NavBar from "./containers/NavBar"
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <ThemeProvider theme={theme}>
           <ApolloProvider client={client}>
             <div className="App">
+              <NavBar />
               <Switch>
                 <Route path="/" component={Home} />
               </Switch>
