@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components'
 import theme from './theme'
 import client from './client'
 import Home from './containers/Home/'
-import NavBar from "./containers/NavBar"
+import NavBar from "./components/NavBar/"
 
 class App extends Component {
   render() {
@@ -14,7 +14,7 @@ class App extends Component {
         <ThemeProvider theme={theme}>
           <ApolloProvider client={client}>
             <div className="App">
-              <NavBar />
+              <NavBar onClicks={[]} items={["Dog", "Cog"]}/>
               <Switch>
                 <Route path="/" component={Home} />
               </Switch>

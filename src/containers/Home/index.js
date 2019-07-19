@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
+import Showcase from "../../components/Showcase"
 
 class Home extends Component {
   render() {
-    return <div>DEV react-frontend-starter!</div>
+    return (<Showcase />)
   }
 }
 
